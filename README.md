@@ -6,7 +6,7 @@ This extension contains three lua filters:
 2) Global R/Python toggle button (appears bottom left)
 3) Accessibility extras - e.g. figcaption darker, tab highlighting boxes
 
-## Installing
+## Installing (to just use the filter)
 
 ```bash
 quarto add david-hodge/stats-uog
@@ -36,6 +36,10 @@ stats-uog:
     acc-style: true/false
 ```
 Allows toggling off of any of the three filters currently included. Only setting a toggle to false will disable it. Filters are otherwise loaded by default. Your console/terminal text should tell you which filters are being loaded.
+
+## Experimenting
+
+If you wish to experiment then `quarto use template david-hodge/stats-uog` will download the full extension and example folder structure. Then to use locally the quarto command is `quarto use path/to/stats-uog` which copies just the `_extensions` folder as above (see Installing).
 
 ## Example
 
