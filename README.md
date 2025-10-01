@@ -6,6 +6,25 @@ This extension contains three lua filters:
 2) Global R/Python toggle button (appears bottom left)
 3) Accessibility extras - e.g. figcaption darker, tab highlighting boxes
 
+The R/Python code blocks and toggler are targeted at the Quarto panel-tabset feature.
+e.g.
+
+```markdown
+:::{.panel-tabset}
+## R
+
+```{r}
+x <- 5
+```
+
+## Python
+
+```{python}
+y = 5
+```
+:::
+```
+
 ## Installing (to just use the filter)
 
 ```bash
