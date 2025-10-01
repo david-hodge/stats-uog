@@ -1,0 +1,8 @@
+/* Figure caption are way too pale grey, bad contrast on white background */
+figcaption {
+  color: var(--caption-text-color);
+}
+
+body {
+  border: 5px solid red !important;
+}

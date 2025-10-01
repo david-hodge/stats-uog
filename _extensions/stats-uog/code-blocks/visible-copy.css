@@ -1,0 +1,46 @@
+/* Always show copy button and icon */
+/* also add a clear outline for focus */
+  
+pre.code-with-copy {
+  position: relative;
+}
+
+
+pre.code-with-copy .code-copy-button {
+  opacity: 1 !important;
+  pointer-events: auto;
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+  background: #f0f0f0;
+    border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+pre.code-with-copy .code-copy-button .bi {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+pre.code-with-copy .code-copy-button:focus-visible {
+  outline: 3px solid #0056b3;
+  outline-offset: 2px;
+  background: #e0f0ff;
+    border-color: #0056b3;
+}
+
+/* Don't show these icons when printing */
+@media print {
+  pre.code-with-copy .code-copy-button,
+  pre.code-with-copy .code-copy-button .bi {
+    display: none !important;
+  }
+}
+

@@ -1,0 +1,85 @@
+---
+title: "Uog-ext Example"
+format:
+  html:
+    theme: [hero]
+filters:
+  - stats-uog
+
+stats-uog: # default is to run all not set to all
+  acc-styles: false
+  global-toggle: false
+  code-blocks: true
+
+---
+
+## Filters
+
+This loads three filters.
+
+  - One neatens up code blocks, along with making the copy button always visible (code-blocks)
+  - One adds a global code language switcher (global-toggle)
+  - One adds general accessibility extra css, variables may need to be defined inside an scss already
+
+Just loading uog-ext loads all filters. User can override by explicitly loading one of the filters.
+
+The plan is to package these filters as default loaded in a new custom format.
+
+
+## Heading
+    
+::: {.panel-tabset}
+
+### R
+
+```{r}
+x <- c(1, 2, 3, 4, 5)
+mean(x)
+```
+
+That was the R code. And here's another R block
+
+```{r}
+#| label: fig-rnorm
+#| fig-cap: "A base R plot"
+#| fig-alt: "Alt text"
+
+x <- rnorm(50)
+plot(x)
+```
+
+
+### Python
+
+On the other hand here is some python code.
+
+```{python}
+x = [1, 2, 3, 4, 5]
+sum(x)/len(x)
+```
+
+This code was more complicated to do the same thing because Python is like that.
+
+:::
+  
+::: {.panel-tabset}
+
+### R
+
+```{r}
+x <- c(2, 3, 4, 5)
+mean(x)
+```
+
+### Python
+
+This Python code is also set to evaluate, so you get to see the result. This requires the `reticulate` package for the it to be able to see your python installation. If you wish to use packages you're probably best off using conda to create an environment and load them first.
+
+```{python eval=TRUE}
+x = [2, 3, 4, 5]
+sum(x)/len(x)
+```
+
+::: 
+
+
