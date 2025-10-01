@@ -9,7 +9,7 @@ This extension contains three lua filters:
 The R/Python code blocks and toggler are targeted at the Quarto panel-tabset feature.
 e.g.
 
-```markdown
+`````markdown
 :::{.panel-tabset}
 ## R
 
@@ -23,7 +23,7 @@ x <- 5
 y = 5
 ```
 :::
-```
+`````
 
 ## Installing (to just use the filter)
 
