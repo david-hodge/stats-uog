@@ -1,12 +1,12 @@
 /* Move tabset to the right */
-.panel-tabset .nav-tabs {
+.panel-tabset:not(.unstyled) .nav-tabs {
   justify-content: flex-end;
   margin-bottom: 0;
   font-size: 0.9rem; /* 10% smaller */
 }
 
 /* Style all tabs */
-.panel-tabset .nav-tabs .nav-link {
+.panel-tabset:not(.unstyled) .nav-tabs .nav-link {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.75rem;
   padding: 0.35rem 0.7rem;
@@ -19,13 +19,13 @@
 }
 
 /* Hover effect */
-.panel-tabset .nav-tabs .nav-link:hover {
+.panel-tabset:not(.unstyled) .nav-tabs .nav-link:hover {
   background-color: #e2e6ea;
   border-color: #999;
 }
 
 /* Active tab styling */
-.panel-tabset .nav-tabs .nav-link.active {
+.panel-tabset:not(.unstyled) .nav-tabs .nav-link.active {
   background-color: #ffffff;
   border-color: #777;
   border-bottom-color: transparent;
@@ -34,7 +34,7 @@
 }
 
 /* Styling for focussed tab */
-.panel-tabset .nav-tabs .nav-link.active:focus-visible {
+.panel-tabset:not(.unstyled) .nav-tabs .nav-link.active:focus-visible {
   outline: 3px solid #0056b3;
   outline-offset: 2px;
   background: #fff;
