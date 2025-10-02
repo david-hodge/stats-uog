@@ -2,6 +2,9 @@
 *.html
 *_files/
 
+# don't ignore global-toggle.html, which is needed for the stats-uog extension
+!**/global-toggle.html
+
 
 
 # History files
@@ -50,3 +53,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+/.luarc.json
