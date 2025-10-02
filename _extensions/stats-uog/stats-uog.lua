@@ -13,6 +13,17 @@ local collected = {}  -- table of Pandoc functions
 -- Read YAML toggles
 function Meta(meta)
   local su_meta = meta["stats-uog"] or {}
+
+  -- Check su_meta is in the right format
+  if type(su_meta) ~= "table" then
+    print("[stats-uog] ERROR: 'stats-uog' metadata must be list of pairs. Example format:")
+    print("[stats-uog] stats-uog:")
+    print("[stats-uog]   global-toggle: false")
+    print("[stats-uog]   code-blocks: false")
+    print("[stats-uog]   acc-styles: true")
+    return
+  end
+
   -- Default: all submodules enabled
   for name, _ in pairs(sub_filters) do
     toggles[name] = true

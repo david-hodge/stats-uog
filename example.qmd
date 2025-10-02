@@ -6,6 +6,8 @@ format:
 filters:
   - stats-uog
 
+stats-uog: true
+
 ---
 
 ## Filters
@@ -27,7 +29,7 @@ The plan is to package these filters as default loaded in a new custom format.
 
 ### R
 
-```{r}
+```{r r_mean}
 x <- c(1, 2, 3, 4, 5)
 mean(x)
 ```
@@ -48,7 +50,7 @@ plot(x)
 
 On the other hand here is some python code.
 
-```{python}
+```{python py_mean}
 x = [1, 2, 3, 4, 5]
 sum(x)/len(x)
 ```
@@ -61,7 +63,7 @@ This code was more complicated to do the same thing because Python is like that.
 
 ### R
 
-```{r}
+```{r r_mean_2}
 x <- c(2, 3, 4, 5)
 mean(x)
 ```
@@ -70,7 +72,7 @@ mean(x)
 
 This Python code is also set to evaluate, so you get to see the result. This requires the `reticulate` package for the it to be able to see your python installation. If you wish to use packages you're probably best off using conda to create an environment and load them first.
 
-```{python eval=TRUE}
+```{python py_mean_2, eval=TRUE}
 x = [2, 3, 4, 5]
 sum(x)/len(x)
 ```
