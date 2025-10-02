@@ -39,3 +39,55 @@
   outline-offset: 2px;
   background: #fff;
 }
+
+/* Revealjs uses totally different naming conventions
+here is a copy of the above css but targeting tabby revealjs classes
+
+/* Move Tabby tabset to the right */
+.panel-tabset-tabby {
+  justify-content: flex-end;
+  margin-bottom: 0;
+  font-size: 0.9rem; /* 10% smaller */
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  border-bottom: none;
+}
+
+/* Style all Tabby tabs */
+.panel-tabset-tabby a[role="tab"] {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.75rem; /* Larger font on revealjs than html */
+  padding: 0.35rem 0.7rem;
+  border: 2px solid #ccc;
+  border-radius: 5px 5px 0 0;
+  margin-left: 0.5rem;
+  background-color: #f8f9fa;
+  color: #006ee5;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+
+/* Hover effect for Tabby tabs */
+.panel-tabset-tabby a[role="tab"]:hover {
+  background-color: #e2e6ea;
+  border-color: #999;
+}
+
+/* Active Tabby tab styling */
+.panel-tabset-tabby a[aria-selected="true"] {
+  background-color: #ffffff;
+  border-color: #777;
+  border-bottom-color: transparent;
+  font-weight: 900;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for focused Tabby tab */
+.panel-tabset-tabby a[aria-selected="true"]:focus-visible {
+  outline: 3px solid #0056b3;
+  outline-offset: 2px;
+  background: #fff;
+}
+
