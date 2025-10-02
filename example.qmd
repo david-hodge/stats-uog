@@ -6,11 +6,6 @@ format:
 filters:
   - stats-uog
 
-stats-uog: # default is to run all not set to all
-  acc-styles: false
-  global-toggle: false
-  code-blocks: true
-
 ---
 
 ## Filters
