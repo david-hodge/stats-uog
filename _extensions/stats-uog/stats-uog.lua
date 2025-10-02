@@ -21,7 +21,11 @@ function Meta(meta)
     print("[stats-uog]   global-toggle: false")
     print("[stats-uog]   code-blocks: false")
     print("[stats-uog]   acc-styles: true")
-    return
+    
+    -- Don't quit. Just resest to all on and continue.
+    print("[stats-uog] Applying default: all submodules enabled.")
+    su_meta = {}
+
   end
 
   -- Default: all submodules enabled

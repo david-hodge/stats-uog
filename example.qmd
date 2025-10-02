@@ -6,8 +6,6 @@ format:
 filters:
   - stats-uog
 
-stats-uog: true
-
 ---
 
 ## Filters
