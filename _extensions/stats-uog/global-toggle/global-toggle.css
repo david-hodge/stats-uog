@@ -12,7 +12,13 @@
   padding: 0.5rem 0.8rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 2px solid #ddd;
   backdrop-filter: blur(6px);
+}
+
+body.quarto-dark #global-toggle {
+  background: rgba(0, 0, 0, 0.75); /* dark semi-transparent background */
+  border: 2px solid #777;
 }
 
 /* Buttons inside the toggle */
